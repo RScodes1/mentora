@@ -66,8 +66,8 @@ package.json
 ### Setup Instructions
 ***1. Clone the Repository***
 ```bash
-git clone https://github.com/yourusername/mentora-backend.git
-cd mentora-backend
+git clone https://github.com/RScodes1/mentora-backend.git
+cd mentora
 ```
 ***2. Install Dependencies***
 ```bash
@@ -77,10 +77,10 @@ npm install
 
 Create a .env file in the project root:
 ```bash
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/mentora
-JWT_SECRET=your_jwt_secret
-OPENAI_API_KEY=your_openai_api_key
+PORT=4500
+MONGO_URI=*********
+JWT_SECRET=**********************
+OPENAI_API_KEY=************************
 ```
 ***Setting the OpenAI API Key***
 
@@ -103,7 +103,7 @@ node server.js
 ```
 Server will run on:
 ```bash
-http://localhost:5000
+http://localhost:4500
 ```
 
 ### API Overview
@@ -177,7 +177,7 @@ Example curl Request
 
 You can test the summarization endpoint using curl:
 ```bash
-curl -X POST http://localhost:5000/llm/summarize \
+curl -X POST http://localhost:4500/llm/summarize \
 -H "Content-Type: application/json" \
 -d '{
 "text":"Artificial intelligence is rapidly changing how businesses operate. Companies are using machine learning models to automate processes, analyze large datasets, and improve customer experiences. However, these advancements also bring challenges such as data privacy concerns and ethical considerations."
